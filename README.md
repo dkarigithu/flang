@@ -37,9 +37,6 @@ app.controller("flangCtrl", function ($scope, $http) {
         { label: "Series5",  data: 80},
         { label: "Series6",  data: 110}
     ];
-
-
-});
 ```
 
 5. Enjoy reusable flot charts.
