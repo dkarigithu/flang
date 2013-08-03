@@ -22,7 +22,7 @@ var app = angular.module("flangExample", ["flang"]);
 
 3. Sprinkle in the HTML, example:
 ```
-<piechart style="height: 500px;" ng-model="example_data"></piechart>
+<pie-chart style="height: 500px;" ng-model="example_data"></piechart>
 ```
 
 4. Stash your data in your controller:
