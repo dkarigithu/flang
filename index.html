@@ -19,7 +19,7 @@
 				<h4>Angular Flang.js Wrapper</h4>
 			</div>
 			<div class="span6 right">
-				<h4>Thrown together by <a href="http://erikaugust.com">Erik August Johnson</a></h4>
+				<h4>Put together by <a href="http://erikaugust.com">Erik August Johnson</a></h4>
 			</div>
 		</div>
 	</div>
@@ -32,15 +32,21 @@
 	      	</div>
 	      </div>
 	      <div class="row-fluid">
+			<h2>pie-chart</h2>
 	      	<div class="span12" style="height: 500px; margin:40px 0;">	
-			  	<pie-chart style="height: 500px;" ng-model="example_data"></pie-chart>
+			  	<pie-chart style="height: 500px;" ng-model="pie_example"></pie-chart>
 	      	</div>
 		 </div>
+         <div class="row-fluid">
+           <h2>bar-chart</h2>
+           <div class="span12" style="height: 500px; margin: 40px 0;">
+           		<bar-chart style="height: 500px;" ng-model="bar_example"></bar-chart>
+           </div>
 	</div>
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="lib/jquery-1.7.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="lib/jquery.flot.js"></script>
     <script src="lib/jquery.flot.orderBars.js"></script>
     <script src="lib/jquery.flot.pie.js"></script>

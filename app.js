@@ -1,8 +1,8 @@
 var app = angular.module("flangExample", ["flang"]);
 
 app.controller("flangCtrl", function ($scope, $http) { 
-	$scope.example = Object();
-    $scope.example.data = 
+	$scope.pie_example = Object();
+    $scope.pie_example.data = 
 	[
 		{ label: "Series1",  data: 10},
 		{ label: "Series2",  data: 30},
@@ -12,7 +12,7 @@ app.controller("flangCtrl", function ($scope, $http) {
 		{ label: "Series6",  data: 110}
 	];
 
-    $scope.example.options = 
+    $scope.pie_example.options = 
     {
             colors: ["#38a", "#222", "#666"],
             series: {
@@ -41,6 +41,15 @@ app.controller("flangCtrl", function ($scope, $http) {
                 hoverable: false,
                 clickable: false
             },
+    }
+
+    $scope.bar_example = Object();
+	$scope.bar_example.data  = [[ [0, 3], [1, 3], [2, 5], [3, 7], [4, 8], [5, 10], [6, 11], [7, 9], [8, 5], [9, 13] ]];
+
+
+    $scope.bar_example.options =
+    {
+    	bars: { show: true }
     }
 
 });
